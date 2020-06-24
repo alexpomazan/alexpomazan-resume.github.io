@@ -14,7 +14,7 @@
             rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.4)
     ),
-    url(images/backmain.jpg) center;
+    url(images/mainbackground.jpg) center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -64,7 +64,6 @@ li a {
     line-height: 15px;
     padding: 20px;
     text-decoration: none;
-    font-family: Helvetica;
     font-size: 15px;
 }
 a {

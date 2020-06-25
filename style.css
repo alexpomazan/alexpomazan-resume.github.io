@@ -5,7 +5,7 @@
 .wrapper{
     margin: 0 auto;
 }
-.first_content{
+.intro{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,22 +15,19 @@
             rgba(0, 0, 0, 0.4)
     ),
     url(images/mainbackground.jpg) center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
-.main-text {
+.intro-text {
     text-align: center;
     color: whitesmoke;
     font-family: Arial, sans-serif;
 }
-.main-text > p:first-child {
+.intro-text > p:first-child {
     margin: 0;
     font-size: 50px;
     font-weight: 600;
 }
-.main-text__second_item{
+.intro-text__second_item{
     margin: 0;
     font-size: 30px;
 }
@@ -57,13 +54,19 @@
     flex-direction: column;
     align-items: center;
 }
-.about-title p{
+.about-title p,
+.portfolio-title p{
     font-family: Arial, sans-serif;
     color: rgba(6, 2, 5, 0.85);
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 30px;
-
+}
+.myphoto{
+    margin: 20px;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
 }
 .about-text {
     width: 60%;
@@ -139,10 +142,36 @@ li a:hover{
 .right_header_container {
     justify-content: flex-end;
 }
-.resume{
-    height: 100vh;
-    background: #765d80;
+.skills{
+    height: 60vh;
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.7)
+    ),
+    url(images/backskills.jpeg) center;
+    background-size: cover;
+    background-attachment: fixed;
 }
+.skills-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: white;
+}
+.portfolio-title{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    align-items: center;
+}
+
 .contacts{
     display: flex;
     flex-direction: column;
@@ -162,7 +191,8 @@ li a:hover{
     align-items: center;
     padding-top: 100px;
 }
-.section-title p{
+.section-title p,
+.skills-title p{
     font-family: Arial, sans-serif;
     color: #f4f5f6;
     font-size: 40px;
@@ -170,12 +200,13 @@ li a:hover{
     margin-bottom: 30px;
 }
 .section-title hr,
-.about-title hr{
+.about-title hr,
+.skills-title hr,
+.portfolio-title hr{
     height: 4px;
     width: 100px;
     background: orange;
     border: 0;
-    margin-bottom: 30px;
 }
 .connection{
     display: flex;

@@ -34,16 +34,45 @@
     margin: 0;
     font-size: 30px;
 }
-.second_content{
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100vh;
-    background: #625eff;
+}
+.about-title{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-title p{
+    font-family: Arial, sans-serif;
+    color: rgba(6, 2, 5, 0.85);
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+
+}
+.about-text {
+    width: 60%;
+    text-align: center;
+}
+.download-resume{
+    color: #2C2C2A;
+    background: white;
+    border-color: #2C2C2A;
+}
+.download-resume:hover{
+    color: #f4f5f6;
+    background: #3e3e3c;
 }
 .nav-content{
     height: 6vh;
     background: #2C2C2A;
 }
 .nav-fixed header{
-    margin-bottom: 60px;
+    margin-bottom: 6vh;
 }
 .nav-fixed nav{
     position: fixed;
@@ -55,7 +84,7 @@ li {
     float: left;
 }
 ul {
-    margin: 0;
+    margin-bottom: 0 !important;
     list-style-type: none;
 }
 li a {
@@ -71,15 +100,16 @@ a {
     font-family: Helvetica;
     font-size: 15px;
 }
-a:hover {
-    text-decoration: underline;
+li a:hover{
+    color: orange;
+    text-decoration: none;
 }
 #main_link {
     float: left;
     color: rgb(255, 255, 255);
     line-height: 15px;
     text-decoration: none;
-    padding: 0 20px;
+    padding: 20px;
 }
 .nav-content{
     display: flex;
@@ -91,6 +121,7 @@ a:hover {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    justify-content: center;
 }
 
 .right_header_container {
@@ -104,6 +135,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     height: 94vh;
     background: linear-gradient(
             rgba(0, 0, 0, 0.4),
@@ -118,14 +150,15 @@ a:hover {
     align-items: center;
     padding-top: 100px;
 }
-.section-title p {
+.section-title p{
     font-family: Arial, sans-serif;
     color: #f4f5f6;
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 30px;
 }
-.section-title hr{
+.section-title hr,
+.about-title hr{
     height: 4px;
     width: 100px;
     background: orange;
@@ -134,15 +167,17 @@ a:hover {
 }
 .connection{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    height: 30%;
+    width: 50%;
 }
 .connection__item{
     display: flex;
+    height: 30%;
     flex-direction: column;
     align-items: center;
 }
-.connection__item p{
+.connection__item p,
+.connection__item span {
     padding-top: 10px;
     color: #f4f5f6;
 }

@@ -1,1 +1,1 @@
-# alexpomazan-resume.github.io
+# https://alexpomazan.github.io/myportfolio/

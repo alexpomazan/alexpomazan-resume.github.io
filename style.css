@@ -34,6 +34,17 @@
     margin: 0;
     font-size: 30px;
 }
+.intro-btn{
+    margin: 15px;
+    color: #f4f5f6;
+    background: none;
+    border-color: #2C2C2A;
+}
+.intro-btn:hover {
+    color: black;
+    background: #afb0b1;
+    border-color: black;
+}
 .about{
     display: flex;
     flex-direction: column;
@@ -66,6 +77,7 @@
 .download-resume:hover{
     color: #f4f5f6;
     background: #3e3e3c;
+    border-color: black;
 }
 .nav-content{
     height: 6vh;

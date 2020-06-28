@@ -69,7 +69,7 @@
     width: 200px;
 }
 .about-text {
-    width: 50%;
+    width: 70%;
     text-align: center;
 }
 .download-resume{
@@ -106,7 +106,7 @@ li a {
     right: 100px;
     color: rgb(255, 255, 255);
     line-height: 15px;
-    padding: 20px;
+    padding: 15px;
     text-decoration: none;
     font-size: 15px;
 }
@@ -143,12 +143,12 @@ li a:hover{
     justify-content: flex-end;
 }
 .skills{
-    height: 60vh;
+    height: 100%;
     background: linear-gradient(
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.7)
     ),
-    url(images/backskills.jpeg) center;
+    url(images/skillsback.jpeg) center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -157,6 +157,34 @@ li a:hover{
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
+}
+.skills-content{
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills-content img{
+    width: 100px;
+    height: 100px;
+}
+.skills-content__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 170px;
+    width: 170px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.39);
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 50%;
+}
+.skills-content__item p{
+    color: #f4f5f6;
 }
 .portfolio{
     display: flex;
@@ -177,7 +205,7 @@ li a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 94vh;
+    min-height: 94vh;
     background: linear-gradient(
             rgba(0, 0, 0, 0.4),
             rgba(0, 0, 0, 0.9)
@@ -193,6 +221,7 @@ li a:hover{
 }
 .section-title p,
 .skills-title p{
+    text-align: center;
     font-family: Arial, sans-serif;
     color: #f4f5f6;
     font-size: 40px;
@@ -210,27 +239,43 @@ li a:hover{
 }
 .connection{
     display: flex;
-    height: 30%;
-    width: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .connection__item{
     display: flex;
-    height: 30%;
+    padding: 30px;
     flex-direction: column;
     align-items: center;
 }
 .connection__item p,
 .connection__item span {
+    text-align: center;
     padding-top: 10px;
     color: #f4f5f6;
 }
 .social{
+    height: auto;
+    min-width: 50%;
+}
+.social ul{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 
 }
 i.fa{
     font-size: 35px;
     color: #f4f5f6;
 }
-.social__item{
+a i.fa:hover{
+    color: orange;
+}
+.social li{
+    display: flex;
+    justify-content: center;
     margin: 15px;
 }

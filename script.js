@@ -23,3 +23,8 @@ $(document).ready(function () {
         $('body,html').animate({scrollTop: top}, 800);
     });
 });
+
+const sum = (a=1, b) => {
+    return b= ++a -5
+}
+console.log(sum())

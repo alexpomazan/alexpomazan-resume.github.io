@@ -233,8 +233,11 @@ li a:hover{
     transform: scale(1.2);
     z-index: 1;
 }
-.portfolio-content > a{
+.portfolio-content > button{
     margin: 20px;
+    border: none;
+    outline: none;
+    background: none;
 }
 
 .contacts{

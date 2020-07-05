@@ -16,8 +16,8 @@
         <div class="intro-text">
             <p>Привет, я Алексей Помазан</p>
             <p class="intro-text__second_item">Front End Developer</p>
-            <a class="intro-btn btn btn btn-primary btn-lg" href="#about">Обо мне</a>
-            <a class="intro-btn btn btn btn-primary btn-lg" href="#portfolio">Портфолио</a>
+            <a class="intro-btn btn btn-primary btn-lg" href="#about">Обо мне</a>
+            <a class="intro-btn btn btn-primary btn-lg" href="#portfolio">Портфолио</a>
         </div>
     </section>
     <header>
@@ -55,8 +55,13 @@
             <img src="images/myphoto.jpg" class="myphoto" alt="">
         </div>
         <div class="about-text">
-            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum</p>
-            <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</p>
+            <p>На данный момент прохожу обучение в вузе МГТУ им. Н.Э. Баумана на 4 курсе.
+                Есть навыки работы с HTML5, CSS3, Bootstrap, JS, Django, Git.
+                Есть опыт разработки на фреймворке Django. Писал проект в качестве курсовой - Веб-приложение «Выставка домашних животных»(полноценный сайт, где можно провести выставки между питомцами), а так же сайт по продаже печатей (делал там вёрстку).
+                Сейчас глубже изучаю JS.
+                Я целеустремленный, коммуникабельный, ответственный.
+                Хочу развиваться в сфере web-разработки.</p>
+            <p>Ищу работу Front End Developer, которую можно совмещать с учебой.</p>
             <a class="download-resume btn btn-primary" href="fIles/Помазан%20Алексей%20Александрович.doc" download>Скачать резюме</a>
         </div>
     </section>
@@ -76,7 +81,7 @@
             </div>
             <div class="skills-content__item item-3">
                 <img src="images/bootsrapicon.png" alt="">
-                <p>Bootsrap</p>
+                <p>Bootstrap</p>
             </div>
             <div class="skills-content__item item-3">
                 <img src="images/jsicon.png" alt="">
@@ -103,17 +108,65 @@
             <hr>
         </div>
         <div class="portfolio-content">
-            <div class="portfolio-content__item item-1">
+            <a type="button" data-toggle="modal" data-target="#exampleModal-1">
+                <div class="portfolio-content__item item-1">
                 <p>Сайт печатей</p>
-            </div>
-            <div class="portfolio-content__item item-2">
+                </div>
+            </a>
+            <a type="button" data-toggle="modal" data-target="#exampleModal-2">
+                <div class="portfolio-content__item item-2">
                 <p>Выставка домашних животных</p>
-            </div>
-            <div class="portfolio-content__item item-3">
+                </div>
+            </a>
+            <a type="button" data-toggle="modal" data-target="#exampleModal-3">
+                <div class="portfolio-content__item item-3">
                 <p>Интернет-магазин</p>
+                </div>
+            </a>
+            <div class="modal fade" id="exampleModal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title 1</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="portfolio-content__item item-4">
-                <p>Моё портфолио</p>
+            <div class="modal fade" id="exampleModal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel2">Modal title 2</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel3">Modal title 3</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

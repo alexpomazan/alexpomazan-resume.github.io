@@ -88,7 +88,7 @@
     }
 }
 .nav-fixed header {
-    margin-bottom: 53px;
+    margin-bottom: 61px;
 }
 @media (min-width: 992px) {
     .nav-fixed header {
@@ -222,7 +222,6 @@ li a:hover{
     border: 1px black solid;
     width: 250px;
     height: 250px;
-    margin: 20px;
     transition: all .2s linear;
 }
 .portfolio-content__item:hover{
@@ -233,6 +232,9 @@ li a:hover{
     -ms-transform: scale(1.2);
     transform: scale(1.2);
     z-index: 1;
+}
+.portfolio-content > a{
+    margin: 20px;
 }
 
 .contacts{

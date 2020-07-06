@@ -66,9 +66,17 @@
     width: 200px;
 }
 .about-text {
-    width: 80%;
+    width: 85%;
     text-align: center;
 }
+@media (min-width: 992px) {
+    .about-text {
+        width: 60%;
+        text-align: center;
+    }
+}
+
+
 .download-resume{
     color: #2C2C2A;
     background: white;
@@ -137,16 +145,6 @@ li a:hover{
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-    /*.left_header_container,*/
-    /*   .right_header_container {*/
-    /*       width: 100%;*/
-    /*       display: flex;*/
-    /*       flex-flow: row nowrap;*/
-    /*       align-items: center;*/
-    /*       justify-content: center;*/
-    /*   }*/
-
-
 .navbar-collapse{
     justify-content: flex-end;
 }

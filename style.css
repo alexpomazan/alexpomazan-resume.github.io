@@ -218,20 +218,52 @@ li a:hover{
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.27);
-    border: 1px black solid;
+    color: #f4f5f6;
     width: 250px;
     height: 250px;
     transition: all .2s linear;
 }
 .portfolio-content__item:hover{
     background-color: orange;
-    color: #f4f5f6;
+    color: orange;
     transition: all .2s linear;
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
     z-index: 1;
+}
+.fa.fa-search{
+    font-size: 20px;
+    color: #f4f5f6;
+    transition: all .2s linear;
+}
+.portfolio-content__item:hover > .fa-search{
+    color: orange;
+    transition: all .2s linear;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.portfolio-content__item.item-1{
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.8)
+    ), url(images/backpechati.png) center;
+    background-size: cover;
+}
+.portfolio-content__item.item-2{
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.8)
+    ), url(images/backpets.png) center;
+    background-size: cover;
+}
+.portfolio-content__item.item-3{
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.8)
+    ), url(images/backmagazin.png) center;
+    background-size: cover;
 }
 .portfolio-content > button{
     margin: 20px;

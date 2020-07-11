@@ -14,13 +14,13 @@ $(document).ready(function () {
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 800);
+        $('body,html').animate({scrollTop: top}, 700);
     });
     $("#intro").on("click","a", function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 800);
+        $('body,html').animate({scrollTop: top}, 700);
     });
     $(document).click(function (event) {
         var clickover = $(event.target);

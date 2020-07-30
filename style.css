@@ -250,6 +250,9 @@ li a:hover {
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
+.portfolio-content__item {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
 .portfolio-content__item.item-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(images/backpechati.png) center;
@@ -262,11 +265,16 @@ li a:hover {
 }
 .portfolio-content__item.item-3 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(images/backmagazin.png) center;
+    url(https://geekbrains.ru/favicon-196x196.png) center;
   background-size: cover;
 }
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .modal-image {
-  padding-bottom: 40px;
+  padding: 40px;
   width: 100%;
 }
 .modal-footer {

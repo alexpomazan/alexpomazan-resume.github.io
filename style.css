@@ -57,11 +57,15 @@
   font-weight: 600;
   margin-bottom: 30px;
 }
+.about-image{
+  display: flex;
+  justify-content: center;
+}
 .myphoto {
   margin: 20px;
-  border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  border-radius: 10%;
+  height: 15%;
+  width: 15%;
 }
 .about-text {
   width: 85%;

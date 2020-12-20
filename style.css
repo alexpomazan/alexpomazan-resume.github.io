@@ -64,8 +64,7 @@
 .myphoto {
   margin: 20px;
   border-radius: 10%;
-  height: 15%;
-  width: 15%;
+  width: 250px;
 }
 .about__text {
   width: 85%;

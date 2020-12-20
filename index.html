@@ -20,11 +20,11 @@
   <body>
     <div class="wrapper" id="wrapper">
       <section class="intro" id="intro">
-        <div class="intro-text">
+        <div class="intro__text">
           <p>Привет, я Алексей Помазан</p>
-          <p class="intro-text__second_item">Front End Developer</p>
-          <a class="intro-btn btn btn-primary btn-lg" href="#about">Обо мне</a>
-          <a class="intro-btn btn btn-primary btn-lg" href="#portfolio"
+          <p>Frontend-разработчик</p>
+          <a class="intro__btn btn btn-primary btn-lg" href="#about">Обо мне</a>
+          <a class="intro__btn btn btn-primary btn-lg" href="#portfolio"
             >Портфолио</a
           >
         </div>
@@ -32,7 +32,7 @@
       <header>
         <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
           <div class="container">
-            <a class="main_link" href="#intro">Алексей Помазан</a>
+            <a class="main-link" href="#intro">Алексей Помазан</a>
             <button
               class="navbar-toggler"
               type="button"
@@ -64,30 +64,40 @@
         </nav>
       </header>
       <section class="about" id="about">
-        <div class="about-title">
-          <p class="title">Обо мне</p>
+        <div class="about__title">
+          <p>Обо мне</p>
           <hr />
         </div>
-        <div class="about-image">
+        <div class="about__image">
           <img class="myphoto" src="images/iphoto.jpg" alt="" />
         </div>
-        <div class="about-text">
+        <div class="about__text">
           <p>
             На данный момент прохожу обучение в вузе МГТУ им. Н.Э. Баумана на 4
             курсе.<br />
-            Есть навыки работы с HTML5, CSS3(SCSS, Sass), Bootstrap, JS(TS),
+            Есть навыки работы с HTML5, CSS3(SCSS, Sass), Bootstrap, JS, TS,
             React, Git.<br />
-            Проходил курсы на GeekBrains (JS, React, TS). Делал там несколько
-            проектов.
+            В 2019 году был опыт разработки на фреймворке Django. Писал проект в
+            качестве курсовой - Веб-приложение «Выставка домашних
+            животных»(полноценный сайт, где можно провести выставки между
+            питомцами), а так же с другом писали сайт по продаже печатей (делал
+            там вёрстку), так же на Django.
             <br />
-            Сейчас же работаю Frontend разработчиком.
+            Летом 2020 года проходил курсы (3,5 месяца) в GeekBrains. Изучал там
+            Js, React, Ts, проекты можно посмотреть на GitHub. После курсов
+            устроился на работу Junior frontend-разработчиком, верстал там новый
+            проект, фиксил баги на старых. Уволился, так как на тот момент было
+            важней закрыть долги по учебе. <br />
+            Сейчас учеба не мешает, так как последний семестр.
             <br />
             Я целеустремленный, коммуникабельный, ответственный.<br />
-            Хочу развиваться в сфере web-разработки.
+            Хочу и дальше развиваться в Frontend, стать профи своего дела.
           </p>
-          <!-- <p>
-            Ищу работу FrontEnd Developer, которую можно совмещать с учебой.
-          </p> -->
+          <p>
+            Ищу работу Frontend-разработчика, которую можно совмещать с учебой.
+            <br />
+            Готов уделять работе не больше 30 часов в неделю.
+          </p>
           <a
             class="download-resume btn btn-primary"
             href="fIles/Резюме%20Помазан%20А.А..pdf"
@@ -97,57 +107,57 @@
         </div>
       </section>
       <section class="skills" id="skills">
-        <div class="skills-title">
-          <p class="title">Мои навыки</p>
+        <div class="skills__title">
+          <p>Мои навыки</p>
           <hr />
         </div>
-        <div class="skills-content">
-          <div class="skills-content__item item-1">
+        <div class="skills__content">
+          <div class="skills__content-item item-1">
             <img src="images/htmlicon.png" alt="" />
             <p>HTML5</p>
           </div>
-          <div class="skills-content__item item-2">
+          <div class="skills__content-item item-2">
             <img src="images/cssicon.png" alt="" />
             <p>CSS3</p>
           </div>
-          <div class="skills-content__item item-3">
+          <div class="skills__content-item item-3">
             <img src="images/bootsrapicon.png" alt="" />
             <p>Bootstrap</p>
           </div>
-          <div class="skills-content__item item-3">
+          <div class="skills__content-item item-4">
             <img src="images/jsicon.png" alt="" />
             <p>JS</p>
           </div>
-          <div class="skills-content__item item-2">
+          <div class="skills__content-item item-5">
             <img src="images/reacticon.png" alt="" />
             <p>React</p>
           </div>
-          <div class="skills-content__item item-2">
+          <div class="skills__content-item item-6">
             <img src="images/githubicon.png" alt="" />
             <p>GitHub</p>
           </div>
         </div>
       </section>
       <section class="portfolio" id="portfolio">
-        <div class="portfolio-title">
-          <p class="title">Портфолио</p>
+        <div class="portfolio__title">
+          <p>Портфолио</p>
           <hr />
         </div>
-        <div class="portfolio-content">
+        <div class="portfolio__content">
           <button data-toggle="modal" data-target="#exampleModal-1">
-            <div class="portfolio-content__item item-1">
+            <div class="portfolio__content-item item-1">
               <p>Сайт печатей</p>
               <i class="fa fa-search" aria-hidden="true"></i>
             </div>
           </button>
           <button data-toggle="modal" data-target="#exampleModal-2">
-            <div class="portfolio-content__item item-2">
+            <div class="portfolio__content-item item-2">
               <p>Выставка домашних животных</p>
               <i class="fa fa-search" aria-hidden="true"></i>
             </div>
           </button>
           <button data-toggle="modal" data-target="#exampleModal-3">
-            <div class="portfolio-content__item item-3">
+            <div class="portfolio__content-item item-3">
               <p>HTML/CSS курс на GeekBrains</p>
               <i class="fa fa-search"></i>
             </div>
@@ -329,32 +339,32 @@
         </div>
       </section>
       <section class="contacts" id="contacts">
-        <div class="section-title">
-          <p class="title">Cпособы связи и мои соцсети</p>
+        <div class="contacts__title">
+          <p>Cпособы связи и мои соцсети</p>
           <hr />
         </div>
-        <div class="connection">
-          <div class="connection__item col-md-4">
+        <div class="contacts__info">
+          <div class="contacts__info-item col-md-4">
             <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
             <p>
               Москва, <br />
               Измайловский проспект, 73/2
             </p>
           </div>
-          <div class="connection__item col-md-4">
+          <div class="contacts__info-item col-md-4">
             <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
             <p>aleksey.pomazan@gmail.com</p>
           </div>
-          <div class="connection__item col-md-4">
+          <div class="contacts__info-item col-md-4">
             <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
             <p>+7(985)680-98-10</p>
           </div>
         </div>
-        <div class="social">
+        <div class="contacts__social">
           <ul>
             <li>
               <a
-                class="social__item"
+                class="contacts__social-item"
                 href="https://vk.com/aleksey_pomazan"
                 target="_blank"
               >
@@ -363,7 +373,7 @@
             </li>
             <li>
               <a
-                class="social__item"
+                class="contacts__social-item"
                 href="https://t.me/alexshumaher"
                 target="_blank"
               >
@@ -372,7 +382,7 @@
             </li>
             <li>
               <a
-                class="social__item"
+                class="contacts__social-item"
                 href="https://github.com/alexpomazan"
                 target="_blank"
               >
@@ -381,7 +391,7 @@
             </li>
             <li>
               <a
-                class="social__item"
+                class="contacts__social-item"
                 href="https://www.instagram.com/alex__shumaher/"
                 target="_blank"
               >

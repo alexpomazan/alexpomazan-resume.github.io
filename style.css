@@ -11,20 +11,20 @@
     url(images/mainbackground.jpg) center;
   background-size: cover;
 }
-.intro-text {
+.intro__text {
   text-align: center;
   color: whitesmoke;
   font-family: Arial, sans-serif;
 }
-.intro-text > p:first-child {
+.intro__text :nth-child(1) {
   font-size: 50px;
   font-weight: 600;
 }
-.intro-text__second_item {
+.intro__text :nth-child(2) {
   margin-bottom: 30px;
   font-size: 30px;
 }
-.intro-btn {
+.intro__btn {
   text-align: center;
   width: 145px;
   margin: 15px;
@@ -32,7 +32,7 @@
   background: none;
   border-color: #2c2c2a;
 }
-.intro-btn:hover {
+.intro__btn:hover {
   color: black;
   background: #afb0b1;
   border-color: black;
@@ -44,20 +44,20 @@
   height: 100%;
   padding: 80px 0;
 }
-.about-title {
+.about__title {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.about-title .title,
-.portfolio-title .title {
+.about__title p,
+.portfolio__title p {
   font-family: Arial, sans-serif;
   color: rgba(6, 2, 5, 0.85);
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 30px;
 }
-.about-image{
+.about__image{
   display: flex;
   justify-content: center;
 }
@@ -67,7 +67,7 @@
   height: 15%;
   width: 15%;
 }
-.about-text {
+.about__text {
   width: 85%;
   text-align: center;
 }
@@ -150,13 +150,13 @@ li a:hover {
   color: orange;
   text-decoration: none;
 }
-.main_link {
+.main-link {
   padding: 15px;
   color: rgb(255, 255, 255);
   line-height: 15px;
   text-decoration: none;
 }
-.main_link:hover {
+.main-link:hover {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
@@ -171,23 +171,23 @@ li a:hover {
   background-size: cover;
   background-attachment: fixed;
 }
-.skills-title {
+.skills__title {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.skills-content {
+.skills__content {
   justify-content: center;
   align-items: center;
   min-height: 400px;
   display: flex;
   flex-wrap: wrap;
 }
-.skills-content img {
+.skills__content img {
   width: 60px;
   height: 60px;
 }
-.skills-content__item {
+.skills__content-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -201,7 +201,7 @@ li a:hover {
   border-style: solid;
   border-radius: 50%;
 }
-.skills-content__item p {
+.skills__content-item p {
   color: #f4f5f6;
 }
 .portfolio {
@@ -211,18 +211,18 @@ li a:hover {
   background: white;
   padding: 80px 0px;
 }
-.portfolio-title {
+.portfolio__title {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.portfolio-content {
+.portfolio__content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 }
-.portfolio-content__item {
+.portfolio__content-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -232,8 +232,9 @@ li a:hover {
   width: 250px;
   height: 250px;
   transition: all 0.2s linear;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
-.portfolio-content__item:hover {
+.portfolio__content-item:hover {
   background-color: orange;
   color: orange;
   transition: all 0.2s linear;
@@ -247,30 +248,33 @@ li a:hover {
   color: #f4f5f6;
   transition: all 0.2s linear;
 }
-.portfolio-content__item:hover > .fa-search {
+.portfolio__content-item:hover > .fa-search {
   color: orange;
   transition: all 0.2s linear;
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
-.portfolio-content__item {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-}
-.portfolio-content__item.item-1 {
+.portfolio__content-item.item-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(images/backpechati.png) center;
   background-size: cover;
 }
-.portfolio-content__item.item-2 {
+.portfolio__content-item.item-2 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(images/backpets.png) center;
   background-size: cover;
 }
-.portfolio-content__item.item-3 {
+.portfolio__content-item.item-3 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(https://geekbrains.ru/favicon-196x196.png) center;
   background-size: cover;
+}
+.portfolio__content > button {
+  margin: 20px;
+  border: none;
+  outline: none;
+  background: none;
 }
 .modal-body {
   display: flex;
@@ -290,12 +294,6 @@ li a:hover {
 .modal-footer a:hover {
   color: orange;
 }
-.portfolio-content > button {
-  margin: 20px;
-  border: none;
-  outline: none;
-  background: none;
-}
 
 .contacts {
   display: flex;
@@ -308,13 +306,13 @@ li a:hover {
     url(images/backimages.jpg) center;
   background-size: cover;
 }
-.section-title {
+.contacts__title {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.section-title p,
-.skills-title p {
+.contacts__title p,
+.skills__title p {
   text-align: center;
   font-family: Arial, sans-serif;
   color: #f4f5f6;
@@ -322,55 +320,55 @@ li a:hover {
   font-weight: 600;
   margin-bottom: 30px;
 }
-.section-title hr,
-.about-title hr,
-.skills-title hr,
-.portfolio-title hr {
+.contacts__title hr,
+.about__title hr,
+.skills__title hr,
+.portfolio__title hr {
   height: 4px;
   width: 100px;
   background: orange;
   border: 0;
 }
-.connection {
+.contacts__info {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-.connection__item {
+.contacts__info-item {
   display: flex;
   padding: 30px;
   flex-direction: column;
   align-items: center;
 }
-.connection__item p,
-.connection__item span {
+.contacts__info-item p,
+.contacts__info-item span {
   text-align: center;
   padding-top: 10px;
   color: #f4f5f6;
 }
-.social {
+.contacts__social {
   height: auto;
   min-width: 50%;
 }
 .col-md-4 {
   position: unset;
 }
-.social ul {
+.contacts__social ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .fa-2x,
-.social__item {
+.contacts__social-item {
   font-size: 35px;
   color: #f4f5f6;
 }
-.social__item:hover {
+.contacts__social-item:hover {
   color: orange;
 }
-.social li {
+.contacts__social li {
   display: flex;
   justify-content: center;
   margin: 15px;
